@@ -1,6 +1,9 @@
 package com.github.kirivasile.videohost;
 
 import org.junit.Test;
+import com.github.kirivasile.videohost.User;
+
+import junit.framework.Assert;
 
 import static org.junit.Assert.*;
 
@@ -9,7 +12,10 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+    public void UserNameTest() {
+        User u = new User();
+
+        u.setName("foo");
+        Assert.assertEquals("foo", u.getName());
     }
 }
